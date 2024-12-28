@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /application/
+Disallow: /system/
+Disallow: /asset/
+Disallow: /captcha/
+Disallow: /cc-content/
+Disallow: /apidoc/
+Disallow: /uploads/

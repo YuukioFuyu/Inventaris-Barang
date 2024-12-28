@@ -1,0 +1,1 @@
+RewriteRule ^.*\.(php|rb|py)$ - [F,L,NC]

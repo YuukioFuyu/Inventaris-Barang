@@ -1,0 +1,41 @@
+{
+	"name" : "Portofolio Template",
+	"description" : "Portofolio template cleant and flat",
+	"package" : [
+		{
+			"name" : "header Portofolio",
+			"description" : "Header portofolio",
+			"source" : "header.php",
+			"group"  : "header",
+			"preview" : "preview/header.jpg"
+		},
+		{
+			"name" : "service Portofolio",
+			"description" : "Header portofolio",
+			"source" : "service.php",
+			"group"  : "service",
+			"preview" : "preview/service.jpg"
+		},
+		{
+			"name" : "About Portofolio",
+			"description" : "About portofolio",
+			"source" : "about.php",
+			"group"  : "about",
+			"preview" : "preview/about.jpg"
+		},
+		{
+			"name" : "Team Portofolio",
+			"description" : "Team portofolio",
+			"source" : "team.php",
+			"group"  : "team",
+			"preview" : "preview/team.jpg"
+		},
+		{
+			"name" : "Footer Portofolio",
+			"description" : "Footer portofolio",
+			"source" : "footer.php",
+			"group"  : "footer",
+			"preview" : "preview/footer.jpg"
+		}
+	]
+}

@@ -1,0 +1,64 @@
+.table .chosen-container {
+   width: 100% !important;
+}
+table thead tr,  table thead tr th{
+   background: #F96565 !important;
+   color: #fff;
+   border-color: #FD8080 !important
+}
+.box-validation {
+   background: #FFFEFE; 
+   border:1px solid #D6CFCF;
+   border-bottom: none;
+   padding: 5px 7px 5px 20px;
+   font-size: 12px;
+}
+td .box-validation:last-child {
+   border-bottom:1px solid #D6CFCF;
+}
+.box-validation .delete {
+   color: #FD0A0A;
+   float: right;
+   padding: 5px 0px 5px 5px;
+   cursor: pointer;
+   margin-top: -5px;
+}
+.box-validation input {
+   border:none;
+   border-bottom: 1px solid #727272;
+   padding-left: 2px;
+   margin-left: 4px;
+   width:100px;
+}
+.box-validation .validation-name {
+   width: 100px !important;
+   float: left;
+   font-weight: normal;
+}
+.box-validation .validation-name-max {
+   float: left;
+   font-weight: normal;
+}
+.dragable {
+   cursor: move;
+}
+.floatThead-container {
+  -moz-animation:all 0.2s;
+}
+
+table .table-striped tbody tr:nth-child(odd) td {
+   background:#fff !important
+}
+
+table .chosen-container:focus, table .chosen-container-single:focus, table .chosen-singel  {
+  border-color: #DBDBDB !important;
+}
+
+#diagnosis_list .target-area {
+  background: #DFEFFC;
+  border:0px !important;
+}
+
+table label {
+  font-weight: normal;
+}

@@ -1,0 +1,11 @@
+{
+	"name" : "cicool medium font",
+	"description" : "cicool medium font editor",
+	"type" : "page",
+	"routes" : [
+		"page/*"
+	],
+	"loader" : [
+		"medium-font-family.php"
+	]
+}

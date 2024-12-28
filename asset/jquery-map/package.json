@@ -1,0 +1,41 @@
+{
+  "name": "jquery-addresspicker",
+  "version": "v0.1.0",
+  "author": "G. Tomaselli <girotomaselli@gmail.com>",
+  "contributors": [],
+  "homepage": "http://bygiro.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bygiro/jquery-addressPicker-ByGiro.git"
+  },
+  "main": [
+    "dist/jquery.addressPickerByGiro.js"
+  ],
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "description": "jQuery plugin to build a fully featured google maps address picker",
+  "peerDependencies": {
+    "jquery": "^1.8.x"
+  },
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp": "^3.5.6",
+    "gulp-bump": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-filter": "^2.0.2",
+    "gulp-git": "^1.1.0",
+    "gulp-minify-html": "^1.0.2",
+    "gulp-ng-annotate": "^0.5.2",
+    "gulp-ng-templates": "0.0.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-tag-version": "^1.2.1",
+    "gulp-uglify": "^1.1.0",
+    "gulp-minify-css": "^1.2.3"
+  },
+  "dependencies": {
+    
+  }
+}

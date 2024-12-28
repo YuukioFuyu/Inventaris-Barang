@@ -1,0 +1,83 @@
+{
+	"name" : "Portofolio Template",
+	"description" : "Portofolio template cleant and flat",
+	"package" : [
+		{
+			"name" : "header Portofolio",
+			"description" : "Header portofolio",
+			"source" : "header.php",
+			"group"  : "header",
+			"preview" : "preview/header.jpg"
+		},
+		{
+			"name" : "Portofolio Items",
+			"description" : "Portofolio Items",
+			"source" : "portofolio.php",
+			"group"  : "portofolio",
+			"preview" : "preview/portofolio.jpg"
+		},
+		{
+			"name" : "About Portofolio",
+			"description" : "About Portofolio",
+			"source" : "about.php",
+			"group"  : "about",
+			"preview" : "preview/about.jpg"
+		},
+		{
+			"name" : "Footer Footer Portofolio",
+			"description" : "About Portofolio",
+			"source" : "footer.php",
+			"group"  : "footer",
+			"preview" : "preview/footer.jpg"
+		},
+		{
+			"name" : "Content section Portofolio",
+			"description" : "Content section Portofolio",
+			"source" : "block.php",
+			"group"  : "block",
+			"preview" : "preview/block.jpg"
+		},
+		{
+			"name" : "Content navigation Portofolio",
+			"description" : "Content navigation Portofolio",
+			"source" : "navigation.php",
+			"group"  : "navigation",
+			"preview" : "preview/nav.jpg"
+		},
+		{
+			"name" : "Content column Portofolio",
+			"description" : "Content column Portofolio",
+			"source" : "column.php",
+			"group"  : "column",
+			"preview" : "preview/column.jpg"
+		},
+		{
+			"name" : "Content two column Portofolio",
+			"description" : "Content two column Portofolio",
+			"source" : "column-two.php",
+			"group"  : "column",
+			"preview" : "preview/column-two.jpg"
+		},
+		{
+			"name" : "Content three column Portofolio",
+			"description" : "Content three column Portofolio",
+			"source" : "column-three.php",
+			"group"  : "column",
+			"preview" : "preview/column-three.jpg"
+		},
+		{
+			"name" : "Content container Portofolio",
+			"description" : "Content container Portofolio",
+			"source" : "container.php",
+			"group"  : "column",
+			"preview" : "preview/container.jpg"
+		},
+		{
+			"name" : "Content Contact Portofolio",
+			"description" : "Content Contact Portofolio",
+			"source" : "contact.php",
+			"group"  : "contact",
+			"preview" : "preview/contact.jpg"
+		}
+	]
+}

@@ -1,0 +1,118 @@
+/*!
+ * jQuery / jqLite Address Picker ByGiro
+ *
+ * varsion 0.1.0
+ * Copyright 2015, G. Tomaselli
+ * Licensed under the MIT license.
+ *
+ */
+
+@font-face {
+	font-family: 'apicker';
+    src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg8SBo8AAAC8AAAAYGNtYXAWR9SmAAABHAAAAFRnYXNwAAAAEAAAAXAAAAAIZ2x5ZvpHRcoAAAF4AAABUGhlYWQK4u8JAAACyAAAADZoaGVhB8IDxwAAAwAAAAAkaG10eA4AAAIAAAMkAAAAGGxvY2EA0ACoAAADPAAAAA5tYXhwAAgAVgAAA0wAAAAgbmFtZW8f39EAAANsAAABhnBvc3QAAwAAAAAE9AAAACAAAwNVAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADqEAPA/8AAQAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAADAAAAAwAAABwAAQADAAAAHAADAAEAAAAcAAQAOAAAAAoACAACAAIAAQAg6hD//f//AAAAAAAg6g///f//AAH/4xX1AAMAAQAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAL/wgP+A74AUwAAJTgBMQkBOAExPgE3NiYvAS4BBw4BBzgBMQkBOAExLgEnJgYPAQ4BFx4BFzgBMQkBOAExDgEHBhYfAR4BNz4BNzgBMQkBOAExHgEXFjY/AT4BJy4BA/f+yQE3AgQBAwMHkwcSCQMGAv7J/skCBgMJEgeTBwMDAQQCATf+yQIEAQMDB5MHEgkDBgIBNwE3AgYDCRIHkwcDAwEEiQE3ATcCBgMJEgeTBwMDAQQC/skBNwIEAQMDB5MHEgkDBgL+yf7JAgYDCRIHkwcDAwEEAgE3/skCBAEDAweTBxIJAwYAAAEAAAAgBAADQAAFAAAJAScHCQEDYP4g4KABgAKAA0D+IOCg/oACgAABAAAAAQAA3bQvZV8PPPUACwQAAAAAANPh1UYAAAAA0+HVRgAA/8IEAAO+AAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAGBAAAAAAAAAAAAAAAAgAAAAQAAAIEAAAAAAAAAAAKABQAHgCUAKgAAAABAAAABgBUAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEABwAAAAEAAAAAAAIABwBgAAEAAAAAAAMABwA2AAEAAAAAAAQABwB1AAEAAAAAAAUACwAVAAEAAAAAAAYABwBLAAEAAAAAAAoAGgCKAAMAAQQJAAEADgAHAAMAAQQJAAIADgBnAAMAAQQJAAMADgA9AAMAAQQJAAQADgB8AAMAAQQJAAUAFgAgAAMAAQQJAAYADgBSAAMAAQQJAAoANACkYXBpY2tlcgBhAHAAaQBjAGsAZQByVmVyc2lvbiAxLjAAVgBlAHIAcwBpAG8AbgAgADEALgAwYXBpY2tlcgBhAHAAaQBjAGsAZQByYXBpY2tlcgBhAHAAaQBjAGsAZQByUmVndWxhcgBSAGUAZwB1AGwAYQByYXBpY2tlcgBhAHAAaQBjAGsAZQByRm9udCBnZW5lcmF0ZWQgYnkgSWNvTW9vbi4ARgBvAG4AdAAgAGcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAuAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-ap {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'apicker' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* cross */
+.invalid-address .ap-input-cont .icon-ap:before {
+  content: "\ea0f";
+}
+
+/* checkmark */
+.valid-address .ap-input-cont .icon-ap:before {
+  content: "\ea10";
+}
+
+.ap-input-cont,
+.ap-input-container {
+	position: relative;
+}
+
+.ap-status-address {
+	position: absolute;
+	right: 5px;
+	bottom: 1px;
+	font-size: 70%;
+}
+
+.valid-address .ap-status-address {
+	color: green;
+}
+
+.invalid-address .ap-status-address {
+	color: red;
+}
+
+.ap-status-address .icon-ap {
+	position: relative;
+	top: 1px;
+}
+
+.ap-status-address .text-ap {
+	margin-left: 2px;
+	font-style: italic;
+}
+
+.suggestions-container {
+	border: 1px solid #999;
+	padding: 5px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+.suggestions-container ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.suggestions-container li {
+	cursor: pointer;
+	border: 1px solid #ccc;
+	margin-bottom: 3px;
+	padding: 3px 6px;
+}
+
+.suggestions-container {
+	position: absolute;
+	z-index: 2000;
+	background:#fff;
+}
+
+.suggestions-container li:not(:last-child) {
+	margin-bottom: 3px;
+}
+
+.suggestions-container li:hover {
+	background-color: #378137;
+	color: #fff;
+}
+
+.valid-address .ap-input-cont input{
+	border: 2px solid green;
+}
+
+.invalid-address .ap-input-cont input{
+	border: 2px solid red;
+}
+
+/* map styles */
+.ap-type-hidden .map-box:not(.map-active) {
+	display: none;
+}
+/* map styles */

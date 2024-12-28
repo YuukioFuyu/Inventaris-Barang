@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+
+
+hr.dashed {
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #CBD0D3;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+hr.shadowDown {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d7dcdf;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.25);
+    height: 20px;
+}
+
+.divider {
+    line-height: 0px !important;
+    height: 0px;
+    border-width: 3px;
+    border-color: #CBD0D3;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.divider.dashed {
+    border-style: dashed;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.divider.dotted {
+    border-style: dotted;
+    border-width: 10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: #e8edef;
+}
+
+.divider.dotted > span {
+    line-height: 0.7em;
+}
+
+.divider > span {
+    background: #fff;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 0px 20px;
+}
+
+.wrapperDark {
+    background: #000;
+    padding: 60px 0px;
+}
+
+.wrapperDark .divider.dashed {
+    border-color: #1ABC9C;
+    border-style: dashed;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: #eee;
+    margin: 0px;
+}
+
+.wrapperDark .divider.dashed > span {
+    background: #000;
+    font-style: normal;
+    color: #eee;
+    font-weight: 200;
+}

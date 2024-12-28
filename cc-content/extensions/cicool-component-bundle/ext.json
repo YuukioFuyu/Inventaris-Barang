@@ -1,0 +1,11 @@
+{
+	"name" : "Cicool component bundle",
+	"description" : "cicool default compnent",
+	"type" : "page",
+	"routes" : [
+		"page/(:any)"
+	],
+	"loader" : [
+		"cicool-component-bundle.php"
+	]
+}

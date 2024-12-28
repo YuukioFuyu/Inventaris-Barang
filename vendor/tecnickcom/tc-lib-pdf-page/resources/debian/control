@@ -1,0 +1,15 @@
+Source: ~#PKGNAME#~
+Maintainer: Nicola Asuni <info@tecnick.com>
+Section: php
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.7
+Homepage: https://github.com/~#VENDOR#~/~#PROJECT#~
+Vcs-Git: https://github.com/~#VENDOR#~/~#PROJECT#~.git
+
+Package: ~#PKGNAME#~
+Provides: php-~#PROJECT#~
+Architecture: all
+Depends: php (>= 8.0.0), php-date, php-zip, php-tecnickcom-tc-lib-color (<< 3.0.0), php-tecnickcom-tc-lib-color (>= 2.2.5), php-tecnickcom-tc-lib-pdf-encrypt (<< 3.0.0), php-tecnickcom-tc-lib-pdf-encrypt (>= 2.1.8), ${misc:Depends}
+Description: PHP PDF Page Library
+ PHP library containing PDF page formats and definitions.

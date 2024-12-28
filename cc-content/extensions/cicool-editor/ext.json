@@ -1,0 +1,11 @@
+{
+	"name" : "cicool editor",
+	"description" : "cicool default editor",
+	"type" : "page",
+	"routes" : [
+		"page/*"
+	],
+	"loader" : [
+		"cicool-editor.php"
+	]
+}

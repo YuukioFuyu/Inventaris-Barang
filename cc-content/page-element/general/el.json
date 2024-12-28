@@ -1,0 +1,55 @@
+{
+	"name" : "General Template",
+	"description" : "General template",
+	"package" : [
+		{
+			"name" : "Pricing General",
+			"description" : "Pricing General",
+			"source" : "pricing.php",
+			"group"  : "pricing",
+			"preview" : "preview/pricing.jpg"
+		},
+		{
+			"name" : "Pricing Bootstrap",
+			"description" : "Pricing Bootstrap",
+			"source" : "pricing-bootstrap.php",
+			"group"  : "pricing",
+			"preview" : "preview/pricing-bootstrap.jpg"
+		},
+		{
+			"name" : "Simple Nav Responsive",
+			"description" : "Simple Nav Responsive",
+			"source" : "simple-nav.php",
+			"group"  : "navigation",
+			"preview" : "preview/simple-nav.jpg"
+		},
+		{
+			"name" : "Divider Cool",
+			"description" : "Divider Cool",
+			"source" : "divider.php",
+			"group"  : "divider",
+			"preview" : "preview/divider.jpg"
+		},
+		{
+			"name" : "Divider Cool Dark",
+			"description" : "Divider Cool Dark",
+			"source" : "divider-dark.php",
+			"group"  : "divider",
+			"preview" : "preview/divider-dark.jpg"
+		},
+		{
+			"name" : "Divider Cool White",
+			"description" : "Divider Cool White",
+			"source" : "divider-white.php",
+			"group"  : "divider",
+			"preview" : "preview/divider-white.jpg"
+		},
+		{
+			"name" : "Divider Cool Transparent",
+			"description" : "Divider Cool Transparent",
+			"source" : "divider-transparent.php",
+			"group"  : "divider",
+			"preview" : "preview/divider-transparent.jpg"
+		}
+	]
+}

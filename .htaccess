@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Jangan arahkan ulang file yang sudah ada (seperti gambar, stylesheet, dll)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Jangan arahkan ulang beberapa path tertentu seperti index.php dan system/application/sources/
+    RewriteCond $1 !^(index\.php|images|stylesheets|system/application/sources/)
+
+    # Arahkan semua request ke index.php
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+
+    # Menangkal akses ke file di luar root direktori aplikasi
+    RewriteCond %{REQUEST_URI} \.\.\/
+    RewriteRule .* - [F]
+
+    # Blokir akses ke file konfigurasi seperti .env, .git, atau file lain yang sensitif
+    RewriteRule ^(\.git|\.env|\.htaccess|\.htpasswd|\.svn|\.idea|\.vscode) - [F,L]
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Menetapkan PHP versi default (ubah jika perlu sesuai dengan versi PHP yang digunakan)
+<IfModule mime_module>
+    AddHandler application/x-httpd-alt-php56 .php .php5 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
