@@ -108,14 +108,13 @@
         }
 
         .copyright {
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            line-height: 40px;
-            font-size: 1.2rem;
-            color: var(--text-color);
-            bottom:10vh;
-        }
+	    text-align: center;
+	    line-height: 40px;
+	    font-size: 1.2rem;
+	    color: var(--text-color);
+	    padding-top: 30px;
+	    margin-top: 20px;
+	}
 
         .copyright a {
             color: var(--primary-color);
