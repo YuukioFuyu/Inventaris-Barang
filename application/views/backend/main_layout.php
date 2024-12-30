@@ -138,7 +138,7 @@
     <nav class="navbar navbar-static-top">
 
       <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Beralih navigasi</span>
       </a>
 
       <div class="navbar-custom-menu">
@@ -161,10 +161,10 @@
               
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="<?= site_url('user/profile'); ?>" class="btn btn-default btn-flat">Profile</a>
+                  <a href="<?= site_url('user/profile'); ?>" class="btn btn-default btn-flat">Profil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?= site_url('auth/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?= site_url('auth/logout'); ?>" class="btn btn-default btn-flat">Keluar</a>
                 </div>
               </li>
             </ul>
