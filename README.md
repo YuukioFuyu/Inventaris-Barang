@@ -43,13 +43,13 @@ Sistem Inventaris Barang ini tersedia untuk digunakan secara bebas dengan ketent
 
 ## 🛠️ Teknologi yang Didukung
 
-![PHP](https://img.shields.io/badge/PHP-5.6%20to%208.2-darkblue)
+![PHP](https://img.shields.io/badge/PHP-8.0%20to%208.2-darkblue)
 ![CodeIgniter](https://img.shields.io/badge/CodeIgniter-3.1.13-red)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-4.6.2-purple)
 ![jQuery](https://img.shields.io/badge/jQuery-3.6.0-blue)
 
 - **Server:**
-  - ![XAMPP](https://img.shields.io/badge/XAMPP-5.6.3--8.2-orange)
+  - ![XAMPP](https://img.shields.io/badge/XAMPP-8.0.3--8.2.12-orange)
   - ![Apache2](https://img.shields.io/badge/Apache2-%3E%3D2.4.54-red)
   - ![NGINX](https://img.shields.io/badge/NGINX-%3E%3D1.23.3-brightgreen)
 - **Database:**
