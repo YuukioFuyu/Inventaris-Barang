@@ -38,7 +38,7 @@ class Departemen extends Admin
 			'base_url'     => 'departemen/index/',
 			'total_rows'   => $this->model_departemen->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

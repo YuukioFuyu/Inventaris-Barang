@@ -38,7 +38,7 @@ class Rest extends Admin
 			'base_url'     => 'rest/index/',
 			'total_rows'   => $this->model_rest->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

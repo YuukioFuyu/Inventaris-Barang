@@ -38,7 +38,7 @@ class Jabatan extends Admin
 			'base_url'     => 'jabatan/index/',
 			'total_rows'   => $this->model_jabatan->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

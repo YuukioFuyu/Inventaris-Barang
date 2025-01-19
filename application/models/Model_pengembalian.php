@@ -83,16 +83,12 @@ class Model_pengembalian extends MY_Model {
 	}
 
 	public function get_pengembalian_summary() {
-		$query = $this->db->query("
-			SELECT 
-				DATE_FORMAT(tanggal_kembali, '%Y-%m') AS bulan,
-				departemen_peminjam,
-				SUM(jumlah) AS total
-			FROM pengembalian
-			GROUP BY bulan, departemen_peminjam
-			ORDER BY tanggal_kembali ASC
-		");
+		$this->db->select("DATE_FORMAT(tanggal_kembali, '%Y-%m') AS bulan, departemen_peminjam, SUM(jumlah) AS total");
+		$this->db->from('pengembalian');
+		$this->db->group_by("bulan, departemen_peminjam");
+		$this->db->order_by('tanggal_kembali', 'ASC');
 		
+		$query = $this->db->get();
 		return $query->result_array();
 	}	
 

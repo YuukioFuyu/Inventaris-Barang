@@ -196,7 +196,7 @@
 
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 3.0
+      <b>Version</b> 3.1
     </div>
     <div class="copyright text-center my-auto">
 	    <span>Copyright &copy; 2022 - <?= date('Y'); ?> <a href="https://yuuki0.net" target="_blank">Yuukio Fuyu</a>. All Rights Reserved</span>

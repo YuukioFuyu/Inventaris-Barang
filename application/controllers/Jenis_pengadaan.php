@@ -38,7 +38,7 @@ class Jenis_pengadaan extends Admin
 			'base_url'     => 'jenis_pengadaan/index/',
 			'total_rows'   => $this->model_jenis_pengadaan->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

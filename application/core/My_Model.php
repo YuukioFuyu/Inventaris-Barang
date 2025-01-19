@@ -381,7 +381,7 @@ class MY_Model extends CI_Model {
                         $html .= '<img src="' . $compressedImagePath . '" style="display:block; margin-left:auto; margin-right:auto;"/>';
                         $html .= '</td>';
                     } else {
-                        $html .= '<td style="text-align:center; vertical-align:middle; padding:10px;">(Image Not Found)</td>';
+                        $html .= '<td style="text-align:center; vertical-align:middle; padding:10px;">(Tanpa Gambar)</td>';
                     }
                 } else {
                     $html .= '<td style="text-align:center; vertical-align:middle; padding:10px;">' 

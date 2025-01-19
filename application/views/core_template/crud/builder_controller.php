@@ -38,7 +38,7 @@ class <?= ucwords($table_name); ?> extends Admin
 			'base_url'     => '{table_name}/index/',
 			'total_rows'   => $this->model_{table_name}->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

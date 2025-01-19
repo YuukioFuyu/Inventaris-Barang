@@ -83,16 +83,14 @@ class Model_pengadaan extends MY_Model {
 	}
 
 	public function get_pengadaan_summary() {
-        $query = $this->db->query("SELECT 
-            DATE_FORMAT(tanggal_pengadaan, '%Y-%m') AS bulan,
-            jenis_pengadaan,
-            SUM(jumlah) AS total
-        FROM pengadaan
-        GROUP BY bulan, jenis_pengadaan
-        ORDER BY tanggal_pengadaan ASC");
-
-        return $query->result_array();
-    }
+		$this->db->select("DATE_FORMAT(tanggal_pengadaan, '%Y-%m') AS bulan, jenis_pengadaan, SUM(jumlah) AS total");
+		$this->db->from('pengadaan');
+		$this->db->group_by("bulan, jenis_pengadaan");
+		$this->db->order_by('tanggal_pengadaan', 'ASC');
+	
+		$query = $this->db->get();
+		return $query->result_array();
+	}	
 
 }
 

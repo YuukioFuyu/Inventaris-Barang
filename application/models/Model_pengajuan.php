@@ -83,16 +83,12 @@ class Model_pengajuan extends MY_Model {
 	}
 
 	public function get_peminjaman_summary() {
-		$query = $this->db->query("
-			SELECT 
-				DATE_FORMAT(tgl_pinjam, '%Y-%m') AS bulan,
-				departemen,
-				SUM(jumlah) AS total
-			FROM pengajuan
-			GROUP BY bulan, departemen
-			ORDER BY tgl_pinjam ASC
-		");
+		$this->db->select("DATE_FORMAT(tgl_pinjam, '%Y-%m') AS bulan, departemen, SUM(jumlah) AS total");
+		$this->db->from('pengajuan');
+		$this->db->group_by("bulan, departemen");
+		$this->db->order_by('tgl_pinjam', 'ASC');
 		
+		$query = $this->db->get();
 		return $query->result_array();
 	}	
 

@@ -38,7 +38,7 @@ class Pengembalian extends Admin
 			'base_url'     => 'pengembalian/index/',
 			'total_rows'   => $this->model_pengembalian->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

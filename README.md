@@ -95,7 +95,15 @@ Aplikasi modular yang mudah disesuaikan untuk berbagai kebutuhan organisasi.
 ---
 
 ## 📝 ChangeLog
-### Versi 3.0 (Terbaru)
+### Versi 3.1 (Terbaru)
+
+- **Bug Fixes:**
+  - Fixed pagination issue caused by incorrect URL segment configuration.
+  - Resolved incompatibility with SQL ONLY_FULL_GROUP_BY mode by changing the data retrieval method for ChartJS on the dashboard from direct SQL queries to CodeIgniter Query Builder.
+  - Cleaned up backend functionality for alternate text handling of images, specifically for index pages and PDF exports.
+  - Corrected configuration issue in the platform_check function, allowing the program to run on PHP versions 8.0 to 8.2 as initially intended. This issue was reported by **[Muhammad Adji Maulana Putera](https://github.com/adjimaulanap)** in a private chat.
+
+#### Versi 3.0
 
 - **Additions:**
   - ChartJS Integration on Dashboard

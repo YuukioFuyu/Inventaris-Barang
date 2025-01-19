@@ -38,7 +38,7 @@ class Supplier extends Admin
 			'base_url'     => 'supplier/index/',
 			'total_rows'   => $this->model_supplier->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

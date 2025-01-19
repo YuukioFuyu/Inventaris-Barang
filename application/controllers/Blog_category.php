@@ -38,7 +38,7 @@ class Blog_category extends Admin
 			'base_url'     => 'blog_category/index/',
 			'total_rows'   => $this->model_blog_category->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);

@@ -38,7 +38,7 @@ class Form_pengajuan_pinjam_barang extends Admin
 			'base_url'     => 'form_pengajuan_pinjam_barang/index/',
 			'total_rows'   => $this->model_form_pengajuan_pinjam_barang->count_all($filter, $field),
 			'per_page'     => $this->limit_page,
-			'uri_segment'  => 4,
+			'uri_segment'  => 3,
 		];
 
 		$this->data['pagination'] = $this->pagination($config);
